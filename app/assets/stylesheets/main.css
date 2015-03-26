@@ -1,0 +1,18 @@
+body{
+	padding: 10px 0px 0px 30px;
+	height: 100%;
+	width: 100%;
+}
+
+input{
+	margin: 5px;
+}
+
+form div {
+  /*padding: 5px; default div padding in the form e.g. 5px 0 5px 0*/
+  margin: 5px; /*default div padding in the form e.g. 5px 0 5px 0*/
+}
+
+.table{
+	width:20% !important;
+}
