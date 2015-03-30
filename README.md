@@ -37,6 +37,7 @@ Cucumber Test(TDD)
   It will generate file on root path.
 
   3) Generating Rspec Coverage report
+  
   	 $ Add gem :  gem 'simplecov' into gemfile
   	 $ bundle install
   	 $ Add below command in rails_helper
