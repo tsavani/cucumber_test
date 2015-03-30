@@ -1,24 +1,25 @@
 class ArticlesController < ApplicationController
-	before_action :set_article, only: [:destroy]
-	def index
-	  @articles = Article.all
-	end
+  before_action :set_article, only: [:destroy]
 
-	def new
-	  @article = Article.new
-	end
+def index
+  @articles = Article.all
+end
 
-	def create
-	  @article = Article.create!(blog_master_params)
-	  flash[:notice] = "New article created."
-	  redirect_to root_path
-	end
+def new
+  @article = Article.new
+end
 
-	def destroy
-		@article.destroy
-		flash[:notice] = @article.title + " was deleted."
-		redirect_to root_path
-	end
+def create
+  @article = Article.create!(blog_master_params)
+  flash[:notice] = "New article created."
+  redirect_to root_path
+end
+
+def destroy
+  @article.destroy
+  flash[:notice] = @article.title + " was deleted."
+  redirect_to root_path
+end
 
   private
     # Use callbacks to share common setup or constraints between actions.

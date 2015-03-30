@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-
+'ruby 2.0.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.1'
 # Use sqlite3 as the database for Active Record
@@ -25,9 +25,16 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 
 gem 'bootstrap-sass'
 
+group :development do
+	#gem 'ripper', '1.0.5'
+  #gem 'newrelic_rpm', '2.13.1'
+  gem 'brakeman'
+  gem 'rails_best_practices', '1.2.0'
+end
 
 group :development, :test do
-  gem 'cucumber-rails', :require => false
+  #gem 'cucumber-rails', :require => false
+  gem "cucumber-rails", "1.3.0", :require => false
   #gem "webrat"
   # database_cleaner is not required, but highly recommended
   gem 'database_cleaner'

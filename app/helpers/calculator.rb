@@ -1,6 +1,6 @@
 class Calculator
-	def push(arg)
-		@arg ||= []
-		@arg << arg
-	end
+ def push(arg)
+  @arg ||= []
+  @arg << arg
+ end
 end

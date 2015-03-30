@@ -2,7 +2,6 @@
   <% if  @article.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@article.errors.count, "error") %> prohibited this blog_master from being saved:</h2>
-
       <ul>
       <%  @article.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
@@ -10,7 +9,6 @@
       </ul>
     </div>
   <% end %>
-
   <div class="field">
     <%= f.label :title, "Article Title:" %><br>
     <%= f.text_field :title %>
@@ -19,11 +17,6 @@
     <%= f.label :content, "Artical Content :" %><br>
     <%= f.text_field :content %>
   </div>
-  
   <%= f.submit "Create" , class: "btn btn-large btn-primary"  %>
-
   </div>
-
 <% end %>
-
-

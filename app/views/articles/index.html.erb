@@ -1,17 +1,16 @@
 <%= flash[:notice] %>
 <table class="table">
-<tr>
-	<th>Title</th>
-	<th>Content</th>
-	<th>Action</th>
-</tr>
+ <tr>
+  <th>Title</th>
+  <th>Content</th>
+  <th>Action</th>
+ </tr>
 <% for article in @articles %>
-<tr>  
+ <tr>  
   <td><%=h article.title %></td>
   <td><%=h article.content %></td>
   <td> <%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' },  class: "btn btn-primary"  %></td>
-</tr>
+ </tr>
 <% end %>
 </table>
 <%= link_to "Create", new_article_path, class: "btn btn-primary" %>
-
