@@ -6,7 +6,7 @@
   <th>Action</th>
  </tr>
 <% for article in @articles %>
- <tr>  
+ <tr>
   <td><%=h article.title %></td>
   <td><%=h article.content %></td>
   <td> <%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' },  class: "btn btn-primary"  %></td>

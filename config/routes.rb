@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
    #match '/new_article', to: 'articles#new', via: 'get'
 
-   resources :articles
+   resources :articles, :only => [:new, :create, :destroy, :index]
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 
