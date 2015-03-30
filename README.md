@@ -28,8 +28,22 @@ Cucumber Test(TDD)
   
   It will generate file on root path.
 
-  2) Generating Brakeman reports
+  2) Generating Brakeman report
 
   	$ Add gem : gem 'brakeman' into gemfile
   	$ bundle install
     $ bundle exec brakeman -o brakeman_report.html	
+
+  It will generate file on root path.
+
+  3) Generating Rspec Coverage report
+  	 $ Add gem :  gem 'simplecov' into gemfile
+  	 $ bundle install
+  	 $ Add below command in rails_helper
+
+  	 	require 'simplecov'
+			SimpleCov.start 'rails' do
+		end
+
+     $ bundle exec brakeman -o brakeman_report.html
+   It willl generate 'Coverage' folder on root path.
