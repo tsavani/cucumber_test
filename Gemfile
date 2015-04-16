@@ -42,9 +42,19 @@ group :development, :test do
   gem 'simplecov'
   gem 'better_errors'
   gem 'pry'
+  #Guard is a command line tool to easily handle events on file system modifications.
   gem 'guard-rspec'
   gem 'guard-livereload'
   gem 'wdm', '>= 0.1.0'
+  # gem 'rb-fsevent'
+  # gem 'guard-sass'
+  # gem 'guard-coffeescript'
+  # gem 'guard-livereload'
+  # gem 'uard-concat'
+  # gem 'guard-uglify'
+  gem 'capybara'
+  gem "selenium-webdriver"
+  gem 'chromedriver-helper'
 end
 
 
