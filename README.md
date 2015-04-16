@@ -36,7 +36,7 @@ Cucumber Test(TDD)
       end
 
     $ Download CromeDriver from below link:
-  * [Crome-Driver](http://chromedriver.storage.googleapis.com/index.html?path=2.15/)
+********* [Crome-Driver](http://chromedriver.storage.googleapis.com/index.html?path=2.15/)
 
       Copy Cromrdriver.exe to C:\RailsInstaller\Ruby2.0.0\bin folder
     
