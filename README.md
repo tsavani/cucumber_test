@@ -61,7 +61,7 @@ Cucumber Test(TDD)
      $ open new Comand Prompt
      $ Run : guard or bundle exec guard
     
-    Read About Gaurd:
+Read More About Gaurd:
    * [Live demo](http://code.tutsplus.com/tutorials/guard-is-your-best-friend--net-31021)
    * [Gaurd Commands](https://github.com/guard/guard/wiki/List-of-Guard-Commands)
    * [Github](https://github.com/guard/guard)
