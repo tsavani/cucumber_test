@@ -20,23 +20,24 @@ Cucumber Test(TDD)
 
 #### Testing Rspec with Selenium
     
-    $ Add gem : 
+    $ Add below gem into gemfile: 
        gem 'capybara'
        gem "selenium-webdriver"
        gem 'chromedriver-helper'
-    $ Add following code into rails_helper.rb 
+
+    $ Add below code into rails_helper.rb 
 
        require 'capybara/rspec'
        require 'capybara/rails'
 
-    $ Set default browser for test suits, Add following code into rails_helper.rb
+    $ To Set default browser for test suits, Add below code into rails_helper.rb
   
       Capybara.register_driver :selenium do |app|
         Capybara::Selenium::Driver.new(app, :browser => :chrome)
       end
 
     $ Download CromeDriver from below link:
-********* [Crome-Driver](http://chromedriver.storage.googleapis.com/index.html?path=2.15/)
+  *    [Crome-Driver](http://chromedriver.storage.googleapis.com/index.html?path=2.15/)
 
       Copy Cromrdriver.exe to C:\RailsInstaller\Ruby2.0.0\bin folder
     
