@@ -48,3 +48,23 @@ Cucumber Test(TDD)
 
      $ bundle exec brakeman -o brakeman_report.html
    It willl generate 'Coverage' folder on root path.
+
+#### How to use Gaurd
+    
+     $ Prerequisite :
+        $ install Livereload into your browser
+        * [How to install livereload](http://livereload.com/extensions/)
+     $ Add following gem into gemfile
+        $  gem 'guard-rspec'
+        $  gem 'guard-livereload'
+     $ bundle install
+     $ open new Comand Prompt
+     $ Run : guard or bundle exec guard
+    
+    Read About Gaurd:
+       * [Live demo](http://code.tutsplus.com/tutorials/guard-is-your-best-friend--net-31021)
+       * [Gaurd Commands](https://github.com/guard/guard/wiki/List-of-Guard-Commands)
+       * [Github](https://github.com/guard/guard)
+   
+
+        

@@ -6,7 +6,7 @@
         1,
         null,
         1,
-        0,
+        1,
         null,
         null,
         1,
@@ -43,8 +43,12 @@
         null,
         1,
         null
+      ],
+      "C:/Users/Twinkal Savani/671533/ruby/cucumber_test/app/models/article.rb": [
+        1,
+        null
       ]
     },
-    "timestamp": 1427724519
+    "timestamp": 1429184025
   }
 }

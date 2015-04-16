@@ -30,11 +30,11 @@ group :development do
   #gem 'newrelic_rpm', '2.13.1'
   gem 'brakeman'
   gem 'rails_best_practices', '1.2.0'
+  gem 'party_foul'
 end
 
 group :development, :test do
-  #gem 'cucumber-rails', :require => false
-  gem "cucumber-rails", "1.3.0", :require => false
+  gem 'cucumber-rails', :require => false
   #gem "webrat"
   # database_cleaner is not required, but highly recommended
   gem 'database_cleaner'
@@ -42,6 +42,9 @@ group :development, :test do
   gem 'simplecov'
   gem 'better_errors'
   gem 'pry'
+  gem 'guard-rspec'
+  gem 'guard-livereload'
+  gem 'wdm', '>= 0.1.0'
 end
 
 
