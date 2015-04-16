@@ -36,9 +36,8 @@ Cucumber Test(TDD)
         Capybara::Selenium::Driver.new(app, :browser => :chrome)
       end
 
-    $ Download CromeDriver from below link:
-  *    [Crome-Driver](http://chromedriver.storage.googleapis.com/index.html?path=2.15/)
-    $
+    $ Download CromeDriver.exe from below link:
+  *  [Crome-Driver](http://chromedriver.storage.googleapis.com/index.html?path=2.15/)
       Copy Cromrdriver.exe to C:\RailsInstaller\Ruby2.0.0\bin folder 
            
     $ Run : rspec spec\
